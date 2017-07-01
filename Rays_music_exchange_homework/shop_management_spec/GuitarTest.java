@@ -11,12 +11,14 @@ public class GuitarTest {
     guitar = new Guitar("Yamaha F310 Acoustic Guitar");
   }
 
-@Test
-public void guitarHasName() {
-  assertEquals("Yamaha F310 Acoustic Guitar", guitar.getName());
+  @Test
+  public void guitarHasName() {
+    assertEquals("Yamaha F310 Acoustic Guitar", guitar.getName());
   }
 
-  public String playGuitar(){
-    return "Hmmmmhmmmmmmmmhmm!";
+  @Test
+  public void guitarCanBePlayed() {
+    assertEquals("Hmmmmhmmmmmmmmhmm!", guitar.playInstrument());
   }
+
 }

@@ -4,14 +4,14 @@ import behaviours.*;
 public class Guitar extends Instrument implements Playable {
 
   String name;
-  
+
 
   public Guitar(String name) {
     super(name);
 
   }
 
-  public String PlayInstrument() {
+  public String playInstrument() {
     return "Hmmmmhmmmmmmmmhmm!";
   }
 }
