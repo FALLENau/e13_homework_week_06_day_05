@@ -8,7 +8,7 @@ public class GuitarTest {
 
   @Before
   public void before() {
-    guitar = new Guitar("Yamaha F310 Acoustic Guitar");
+    guitar = new Guitar("Yamaha F310 Acoustic Guitar", 40);
   }
 
   @Test
@@ -16,9 +16,14 @@ public class GuitarTest {
     assertEquals("Yamaha F310 Acoustic Guitar", guitar.getName());
   }
 
+  // @Test
+  // public void guitarCanBePlayed() {
+  //   assertEquals("Hmmmmhmmmmmmmmhmm!", guitar.playInstrument());
+  // }
+
   @Test
-  public void guitarCanBePlayed() {
-    assertEquals("Hmmmmhmmmmmmmmhmm!", guitar.playInstrument());
+  public void getCost() {
+    assertEquals(40, guitar.getCost());
   }
 
 }
