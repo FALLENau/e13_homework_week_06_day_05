@@ -1,24 +1,21 @@
 package shop_management;
 import behaviours.*;
 
-public class Guitar extends Instrument implements Sellable {
+public class Guitar extends Instrument implements Sellable, Playable {
 
-  Double cost;
+  int cost;
 
 
-  public Guitar(String name, Double cost) {
-    super(name);
-    this.cost = cost;
-
+  public Guitar(String name, int cost) {
+    super(name, cost);
   }
 
-  public int getCost() {
-    return this.cost;
+  public int calculateMarkup() {
+    // note add calculateMarkup method
   }
 
-  // public String playInstrument() {
-  //   return "Hmmmmhmmmmmmmmhmm!";
-  // }
-
+  public String playInstrument() {
+    return "Hmmmmhmmmmmmmmhmm!";
+  }
 
 }
