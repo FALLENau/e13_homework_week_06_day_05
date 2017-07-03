@@ -2,5 +2,5 @@ package behaviours;
 // Interface
 
 public interface Sellable {
-  int  cost();
+  Double  cost();
 }

@@ -3,10 +3,10 @@ import behaviours.*;
 
 public class Guitar extends Instrument implements Sellable {
 
-  int cost;
+  Double cost;
 
 
-  public Guitar(String name, int cost) {
+  public Guitar(String name, Double cost) {
     super(name);
     this.cost = cost;
 
